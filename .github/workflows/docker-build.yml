@@ -31,3 +31,4 @@ jobs:
           context: .
           push: true
           tags: docker.io/kavitamil13/sample-java-app:latest
+
