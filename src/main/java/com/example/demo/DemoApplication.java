@@ -11,7 +11,7 @@ public class DemoApplication {
 
 	@GetMapping("/")
     public String hello() {
-        return "Hello from Kubernetes!";
+        return "Hello from Kubernetes v1!";
     }
 
 	public static void main(String[] args) {
