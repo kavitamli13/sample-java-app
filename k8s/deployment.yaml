@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-java-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sample-java-app
+  template:
+    metadata:
+      labels:
+        app: sample-java-app
+    spec:
+      containers:
+        - name: sample-java-app
+          image: kavitamil13/sample-java-app:BUILD_TAG
+          ports:
+            - containerPort: 8080
+          imagePullPolicy: Always
