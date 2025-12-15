@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: sample-java-app
-          image: kavitamil13/sample-java-app:BUILD_TAG
+          image: docker.io/kavitamil13/sample-java-app:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
-          imagePullPolicy: Always
