@@ -16,7 +16,7 @@ public class DemoApplication {
 
 	@GetMapping("/hello")
     public String hellok() {
-        return "Hello from Kubernetes:-)!!";
+        return "Hello from Sharath :-)!!";
     }
 	
 
