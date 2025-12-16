@@ -3,10 +3,9 @@ kind: Service
 metadata:
   name: sample-java-app-service
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: sample-java-app
   ports:
     - port: 80
       targetPort: 8080
-      nodePort: 30080
