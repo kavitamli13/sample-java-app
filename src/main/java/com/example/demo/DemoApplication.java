@@ -16,6 +16,7 @@ public class DemoApplication {
 
 	@GetMapping("/hello")
     public String hellok() {
+		System.out.println("test");
         return "Hello from Sharath :-)!!";
     }
 	
